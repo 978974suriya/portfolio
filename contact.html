@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Suriya’s Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Suriya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="fw-bold mb-4 text-center">Contact Me</h1>
+        <p class="lead text-center mb-4">I'd love to hear from you! Fill out the form below or reach me via email/socials.</p>
+        
+        <!-- Contact Form -->
+        <form onsubmit="sendToWhatsApp(event)">
+          <div class="mb-3">
+            <label for="name" class="form-label fw-bold">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-bold">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success px-4">Send via WhatsApp</button>
+        </form>
+
+        <div class="mt-5 text-center">
+          <p class="mb-2 fw-bold">Or reach me directly:</p>
+          <p>
+            <a href="mailto:sivasuriya9345@gmail.com" class="me-3 text-decoration-none">
+              <i class="bi bi-envelope-fill"></i> sivasuriya9345@gmail.com
+            </a><br>
+            <a href="https://github.com/978974suriya" target="_blank" class="me-3 text-decoration-none">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    &copy; 2025 Suriya | All Rights Reserved
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- WhatsApp Script -->
+  <script>
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("Please fill out all fields.");
+        return;
+      }
+
+      const phoneNumber = "919345827621"; // Your number with country code
+      const text = `Hello Suriya,%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Message:* ${encodeURIComponent(message)}`;
+
+      const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${text}`;
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+</body>
+</html>

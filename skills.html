@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills | Suriya’s Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .badge-skill {
+      font-size: 0.8rem;
+      margin: 0 3px 4px 0;
+      padding: 0.3em 0.6em;
+      border-radius: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Suriya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Skills Section -->
+  <section class="container py-5">
+    <h1 class="fw-bold mb-4 text-center">My Skills</h1>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-primary">
+          <div class="card-body text-center">
+            <h5 class="card-title text-primary fw-bold">
+              <i class="bi bi-laptop"></i> Frontend Development
+            </h5>
+            <div class="mb-2">
+              <span class="badge bg-primary badge-skill">HTML5</span>
+              <span class="badge bg-primary badge-skill">CSS3</span>
+              <span class="badge bg-primary badge-skill">SCSS</span>
+              <span class="badge bg-primary badge-skill">JavaScript</span>
+              <span class="badge bg-primary badge-skill">Bootstrap</span>
+              <span class="badge bg-primary badge-skill">React (Basics)</span>
+            </div>
+            <ul class="list-unstyled mt-3 mb-0 text-start">
+              <li>HTML5</li>
+              <li>CSS3, SCSS</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Bootstrap</li>
+              <li>Responsive Design</li>
+              <li>React (Basics)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-success">
+          <div class="card-body text-center">
+            <h5 class="card-title text-success fw-bold">
+              <i class="bi bi-server"></i> Backend & Tools
+            </h5>
+            <div class="mb-2">
+              <span class="badge bg-success badge-skill">Git</span>
+              <span class="badge bg-success badge-skill">GitHub</span>
+              <span class="badge bg-success badge-skill">Node.js (Basics)</span>
+              <span class="badge bg-success badge-skill">REST APIs (Basics)</span>
+              <span class="badge bg-success badge-skill">npm</span>
+              <span class="badge bg-success badge-skill">Command Line</span>
+            </div>
+            <ul class="list-unstyled mt-3 mb-0 text-start">
+              <li>Git & GitHub</li>
+              <li>Node.js (Basics)</li>
+              <li>REST APIs (Basics)</li>
+              <li>npm & package management</li>
+              <li>Command Line Basics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-info">
+          <div class="card-body text-center">
+            <h5 class="card-title text-info fw-bold">
+              <i class="bi bi-cloud-arrow-up"></i> Backend & APIs
+            </h5>
+            <div class="mb-2">
+              <span class="badge bg-info badge-skill">REST APIs</span>
+              <span class="badge bg-info badge-skill">Postman</span>
+              <span class="badge bg-info badge-skill">Express.js</span>
+              <span class="badge bg-info badge-skill">Node.js</span>
+              <span class="badge bg-info badge-skill">JSON</span>
+              <span class="badge bg-info badge-skill">API Integration</span>
+            </div>
+            <ul class="list-unstyled mt-3 mb-0 text-start">
+              <li>Designing RESTful APIs</li>
+              <li>Using Postman for API testing</li>
+              <li>Building backend with Express.js & Node.js</li>
+              <li>Working with JSON data</li>
+              <li>Integrating third-party APIs</li>
+              <li>Basic understanding of OAuth & authentication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Progress Bars -->
+  <section class="container pb-5">
+    <h2 class="fw-bold mb-4 text-center">Skill Levels</h2>
+    <p class="text-center mb-4">Here's a quick look at my proficiency levels based on hands-on experience and projects.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="mb-3">
+          <label class="fw-bold">HTML5 & CSS3</label>
+          <div class="progress" role="progressbar" aria-label="HTML5 & CSS3 skill level" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" title="Expert">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 95%;">95%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="fw-bold">JavaScript</label>
+          <div class="progress" role="progressbar" aria-label="JavaScript skill level" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" title="Advanced">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 85%;">85%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="fw-bold">Bootstrap</label>
+          <div class="progress" role="progressbar" aria-label="Bootstrap skill level" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" title="Advanced">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="fw-bold">React</label>
+          <div class="progress" role="progressbar" aria-label="React skill level" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" title="Intermediate">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark" style="width: 60%;">60%</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="fw-bold">Git & GitHub</label>
+          <div class="progress" role="progressbar" aria-label="Git and GitHub skill level" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" title="Proficient">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 80%;">80%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
